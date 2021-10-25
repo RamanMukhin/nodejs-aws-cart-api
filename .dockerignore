@@ -1,5 +1,10 @@
+# exclude node_modules, since the required dependencies will be installed in the container
 node_modules
+
+# exclude dist, since this folder will be built in the container
 dist
+
+# we exclude next files/folders, since they are not needed to work in the container
 vscode
 Dockerfiles
 scripts
